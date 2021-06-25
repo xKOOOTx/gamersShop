@@ -1,0 +1,93 @@
+@import "../../variables";
+
+.infoHeader {
+  padding: 19px 0;
+  height: 83px;
+
+  background: rgba($black, .5);
+  &__wrapper {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: $white;
+    &_bottom {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 500;
+      letter-spacing: 2.0em;
+      text-transform: uppercase;
+    }
+  }
+  &__contactsBlock {
+    display: flex;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16.7px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: $white;
+    &_number {
+
+    }
+  }
+  &__email {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16.7px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: $white;
+    &_number {
+
+    }
+  }
+  &__searchBlock {
+    width: 208px;
+    display: flex;
+    align-items: center;
+    &_input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid $white;
+      background: transparent;
+      outline: none;
+      font-family: 'Roboto Condensed';
+      font-size: 16.7px;
+      line-height: 22px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      color: $white;
+      &::placeholder {
+        color: $white;
+      }
+    }
+    &_inputBtn {
+      border: 1px solid $white;
+      border-left: none;
+      background: transparent;
+      cursor: pointer;
+      &_img {
+        padding: 11px 15px 13px;
+      }
+    }
+  }
+}

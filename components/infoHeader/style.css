@@ -1,0 +1,86 @@
+.infoHeader {
+  padding: 19px 0;
+  height: 83px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.infoHeader__wrapper {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoHeader__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.infoHeader__logo_bottom {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 2em;
+  text-transform: uppercase;
+}
+.infoHeader__contactsBlock {
+  display: flex;
+}
+.infoHeader__phone {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16.7px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.infoHeader__email {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16.7px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.infoHeader__searchBlock {
+  width: 208px;
+  display: flex;
+  align-items: center;
+}
+.infoHeader__searchBlock_input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  outline: none;
+  font-family: "Roboto Condensed";
+  font-size: 16.7px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.infoHeader__searchBlock_input::placeholder {
+  color: #FFFFFF;
+}
+.infoHeader__searchBlock_inputBtn {
+  border: 1px solid #FFFFFF;
+  border-left: none;
+  background: transparent;
+  cursor: pointer;
+}
+.infoHeader__searchBlock_inputBtn_img {
+  padding: 11px 15px 13px;
+}
+
+/*# sourceMappingURL=style.css.map */
