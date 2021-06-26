@@ -11,11 +11,11 @@ class InfoHeader extends HTMLElement {
                             <div class="infoHeader__logo_bottom">games</div>
                         </div>
                         <div class="infoHeader__contactsBlock">
-                            <a href="+123 456 7890" class="infoHeader__phone">
-                                <img src="./assets/img/phone_img.png" alt="phone_img"><p class="infoHeader__phone_number">+123 456 7890</p>
+                            <a href="+123 456 7890" class="infoHeader__contact">
+                                <img src="./assets/img/phone_img.png" alt="phone_img"><p class="infoHeader__contact_number">+123 456 7890</p>
                             </a>
-                            <a href="+123 456 7890" class="infoHeader__email">
-                                <img src="./assets/img/email_img.png" alt="email_img"><p class="infoHeader__email_number">info@example.com</p>
+                            <a href="+123 456 7890" class="infoHeader__contact">
+                                <img src="./assets/img/email_img.png" alt="email_img"><p class="infoHeader__contact_number">info@example.com</p>
                             </a>
                         </div>
                         <div class="infoHeader__searchBlock">

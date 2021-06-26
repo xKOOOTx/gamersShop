@@ -32,9 +32,10 @@
   &__contactsBlock {
     display: flex;
   }
-  &__phone {
+  &__contact {
     display: flex;
     align-items: center;
+    position: relative;
     height: 25px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16.7px;
@@ -43,21 +44,26 @@
     letter-spacing: 0.01em;
     color: $white;
     &_number {
-
+      padding-left: 14px;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background: $red;
+        transition: width .3s ease-in-out;
+      }
     }
-  }
-  &__email {
-    display: flex;
-    align-items: center;
-    height: 25px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16.7px;
-    line-height: 22px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    color: $white;
-    &_number {
-
+    &:first-child {
+      margin-right: 39px;
+    }
+    &:hover {
+      & .infoHeader__contact_number:after {
+        width: 100%;
+      }
     }
   }
   &__searchBlock {
@@ -75,19 +81,41 @@
       line-height: 22px;
       font-weight: 400;
       letter-spacing: 0.01em;
+      transition: .3s border-color ease-in-out;
       color: $white;
       &::placeholder {
         color: $white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        & + .infoHeader__searchBlock_inputBtn{
+          border-color: $red;
+        }
+        border-color: $red;
       }
     }
     &_inputBtn {
       border: 1px solid $white;
       border-left: none;
       background: transparent;
+      transition: .3s border-color ease-in-out;
       cursor: pointer;
+      &::placeholder {
+        color: $white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $red;
+      }
       &_img {
-        padding: 11px 15px 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 15px 14px 15px;
       }
     }
   }
 }
+

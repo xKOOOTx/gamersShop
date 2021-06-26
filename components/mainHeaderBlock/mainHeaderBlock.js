@@ -6,6 +6,8 @@ class MainHeaderBlock extends HTMLElement {
             `
             <div class="mainHeaderBlock">
                 <u-info-header></u-info-header>
+                <u-navigation></u-navigation>
+                <u-main-info-block></u-main-info-block>
             </div>
             `;
     }
@@ -13,3 +15,5 @@ class MainHeaderBlock extends HTMLElement {
 }
 
 customElements.define('u-main-header-block', MainHeaderBlock);
+
+

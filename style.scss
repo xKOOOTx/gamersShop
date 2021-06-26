@@ -4,13 +4,15 @@
 // Roboto Condensed //font-family: 'Roboto Condensed', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+//import variables
+@import "variables.css";
 
 //import components
 @import "./components/mainHeaderBlock/style.css";
 @import "./components/infoHeader/style.css";
+@import "./components/navigation/style.css";
+@import "./components/mainInfoBlock/style.css";
 
-//import variables
-@import "variables.css";
 
 
 * {
@@ -24,7 +26,12 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 

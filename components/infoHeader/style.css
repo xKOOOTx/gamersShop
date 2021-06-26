@@ -30,9 +30,10 @@
 .infoHeader__contactsBlock {
   display: flex;
 }
-.infoHeader__phone {
+.infoHeader__contact {
   display: flex;
   align-items: center;
+  position: relative;
   height: 25px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16.7px;
@@ -41,16 +42,25 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
 }
-.infoHeader__email {
-  display: flex;
-  align-items: center;
-  height: 25px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16.7px;
-  line-height: 22px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
+.infoHeader__contact_number {
+  padding-left: 14px;
+}
+.infoHeader__contact_number:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #f44336;
+  transition: width 0.3s ease-in-out;
+}
+.infoHeader__contact:first-child {
+  margin-right: 39px;
+}
+.infoHeader__contact:hover .infoHeader__contact_number:after {
+  width: 100%;
 }
 .infoHeader__searchBlock {
   width: 208px;
@@ -68,19 +78,36 @@
   line-height: 22px;
   font-weight: 400;
   letter-spacing: 0.01em;
+  transition: 0.3s border-color ease-in-out;
   color: #FFFFFF;
 }
 .infoHeader__searchBlock_input::placeholder {
   color: #FFFFFF;
 }
+.infoHeader__searchBlock_input:hover, .infoHeader__searchBlock_input:focus, .infoHeader__searchBlock_input:active {
+  border-color: #f44336;
+}
+.infoHeader__searchBlock_input:hover + .infoHeader__searchBlock_inputBtn, .infoHeader__searchBlock_input:focus + .infoHeader__searchBlock_inputBtn, .infoHeader__searchBlock_input:active + .infoHeader__searchBlock_inputBtn {
+  border-color: #f44336;
+}
 .infoHeader__searchBlock_inputBtn {
   border: 1px solid #FFFFFF;
   border-left: none;
   background: transparent;
+  transition: 0.3s border-color ease-in-out;
   cursor: pointer;
 }
+.infoHeader__searchBlock_inputBtn::placeholder {
+  color: #FFFFFF;
+}
+.infoHeader__searchBlock_inputBtn:hover, .infoHeader__searchBlock_inputBtn:focus, .infoHeader__searchBlock_inputBtn:active {
+  border-color: #f44336;
+}
 .infoHeader__searchBlock_inputBtn_img {
-  padding: 11px 15px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 15px 14px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

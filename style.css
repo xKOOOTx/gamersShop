@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import "variables.css";
 @import "./components/mainHeaderBlock/style.css";
 @import "./components/infoHeader/style.css";
-@import "variables.css";
+@import "./components/navigation/style.css";
+@import "./components/mainInfoBlock/style.css";
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,12 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
