@@ -5,13 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 //import variables
-@import "variables.css";
+@import "variables";
 
 //import components
 @import "./components/mainHeaderBlock/style.css";
 @import "./components/infoHeader/style.css";
 @import "./components/navigation/style.css";
 @import "./components/mainInfoBlock/style.css";
+@import "./components/infoHeaderSocials/style.css";
+@import "./components/aboutUs/style.css";
+@import "./components/servicesBlock/style.css";
+@import "./components/ourGallery/style.css";
+@import "./components/testimonial/style.css";
 
 
 
@@ -23,6 +28,16 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $greyPlus;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  scroll-behavior: smooth;
 }
 
 a {
@@ -33,5 +48,10 @@ a {
 li {
   list-style: none;
 }
+button {
+  border: none;
+  cursor: pointer;
+}
+
 
 

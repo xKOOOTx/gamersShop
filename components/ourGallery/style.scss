@@ -1,0 +1,52 @@
+@import "../../variables";
+
+.ourGallery {
+  max-width: 1171px;
+  margin: 0 auto;
+  &__header {
+    font-family: $poppins;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 500;
+    color: $red;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    &_element {
+      background: $greyThird;
+      border: 1px solid transparent;
+      &_name {
+        max-width: 170px;
+        margin: 18px auto 0;
+        font-family: $poppins;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $black;
+      }
+      &_button {
+        margin: 27px auto 13px;
+        padding: 8px 52px;
+        border: none;
+        background: $red;
+        font-family: $poppins;
+        font-size: 14.1px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        color: $white;
+        text-transform: capitalize;
+      }
+      &:hover {
+        border-color: $greyLight;
+      }
+    }
+  }
+}

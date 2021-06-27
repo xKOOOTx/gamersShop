@@ -1,0 +1,29 @@
+.infoHeaderSocials {
+  max-width: 1000px;
+  margin: 75px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.infoHeaderSocials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  transition: 0.2s border-color ease-in-out;
+}
+.infoHeaderSocials__link:hover {
+  border-color: #f44336;
+}
+.infoHeaderSocials__link:hover .infoHeaderSocials__social {
+  color: #f44336;
+}
+.infoHeaderSocials__social {
+  color: #FFFFFF;
+  transition: 0.2s color ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
