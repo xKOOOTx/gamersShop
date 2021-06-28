@@ -19,8 +19,17 @@
       letter-spacing: 0.01em;
       &:hover {
         & .navigation__list_link {
-          color: $white;
+          color: $grey;
           &:after {
+            width: 100%;
+          }
+        }
+      }
+      &-active {
+        & .navigation__list_link {
+          color: $red;
+          &:after {
+            background: $red;
             width: 100%;
           }
         }
@@ -40,7 +49,7 @@
         width: 0;
         height: 3px;
         transition: .2s width ease-in-out;
-        background: $white;
+        background: $grey;
       }
     }
   }

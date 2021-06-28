@@ -19,9 +19,16 @@
   letter-spacing: 0.01em;
 }
 .navigation__list_element:hover .navigation__list_link {
-  color: #FFFFFF;
+  color: #999999;
 }
 .navigation__list_element:hover .navigation__list_link:after {
+  width: 100%;
+}
+.navigation__list_element-active .navigation__list_link {
+  color: #f44336;
+}
+.navigation__list_element-active .navigation__list_link:after {
+  background: #f44336;
   width: 100%;
 }
 .navigation__list_link {
@@ -39,7 +46,7 @@
   width: 0;
   height: 3px;
   transition: 0.2s width ease-in-out;
-  background: #FFFFFF;
+  background: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
