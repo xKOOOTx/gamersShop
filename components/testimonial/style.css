@@ -40,6 +40,7 @@
   line-height: 24px;
   font-weight: 300;
   color: #FFFFFF;
+  animation: fade 0.3s ease-in-out;
 }
 .testimonial__text_description {
   max-width: 940px;

@@ -12,6 +12,9 @@
     color: $red;
   }
   &__mainBlock {
+    max-width: 1171px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     &_left {
@@ -129,12 +132,21 @@
         padding: 10px 0;
         display: flex;
         align-items: center;
+        background: url("../../assets/img/featured_events/plus-solid.svg") left no-repeat;
+        background-size: 13px;
         font-family: $roboto;
         font-size: 16px;
         line-height: 48px;
         font-weight: 700;
         color: $black;
         cursor: pointer;
+        &-active {
+          background: url("../../assets/img/featured_events/minus-solid.svg") left no-repeat;
+          background-size: 13px;
+        }
+      }
+      &_headerH3 {
+        margin-left: 20px;
       }
       &_headerBtnOpen {
         margin-right: 10px;
@@ -155,6 +167,9 @@
       }
     }
   }
+  &__sliderWrapper {
+    animation: fade .3s ease-in-out;
+  }
 }
 
 .active {
@@ -162,4 +177,9 @@
 }
 .closed {
   display: none;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

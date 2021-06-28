@@ -59,54 +59,118 @@ class NewsAndEvents extends HTMLElement {
                                     <i class="fas fa-angle-right newsAndEvents__mainBlock_right_buttons" id="featuredEventsRightBtn"></i>
                                 </div>
                             </div>
-                            <div class="featuredEvents__gallery">
-                                <img src="./assets/img/featured_events/featured_events_img_1.jpg" alt="img" class="featuredEvents__gallery_img">
-                                <img src="./assets/img/featured_events/featured_events_img_2.jpg" alt="img" class="featuredEvents__gallery_img">
-                                <img src="./assets/img/featured_events/featured_events_img_3.jpg" alt="img" class="featuredEvents__gallery_img">
+                            <div class="featuredEvents__sliderWrapper">
+                                <div class="featuredEvents__gallery">
+                                    <img src="./assets/img/featured_events/featured_events_img_1.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_2.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_3.jpg" alt="img" class="featuredEvents__gallery_img">
+                                </div>
+                                <div class="featuredEvents__events">
+                                    <ul class="featuredEvents__events_list">
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header featuredEvents__events_element_header-active">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="featuredEvents__events">
-                                <ul class="featuredEvents__events_list">
-                                    <li class="featuredEvents__events_element">
-                                        <div class="featuredEvents__events_element_header">
-                                            <p class="featuredEvents__events_element_headerBtnOpen active">-</p>
-                                            <p class="featuredEvents__events_element_headerBtnClose">+</p>
-                                            <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
-                                        </div>
-                                        <p class="featuredEvents__events_element_text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </li>
-                                    <li class="featuredEvents__events_element">
-                                        <div class="featuredEvents__events_element_header">
-                                            <p class="featuredEvents__events_element_headerBtnOpen">-</p>
-                                            <p class="featuredEvents__events_element_headerBtnClose active">+</p>
-                                            <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
-                                        </div>
-                                        <p class="featuredEvents__events_element_text closed">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </li>
-                                    <li class="featuredEvents__events_element">
-                                        <div class="featuredEvents__events_element_header">
-                                            <p class="featuredEvents__events_element_headerBtnOpen">-</p>
-                                            <p class="featuredEvents__events_element_headerBtnClose active">+</p>
-                                            <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
-                                        </div>
-                                        <p class="featuredEvents__events_element_text closed">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </li>
-                                    <li class="featuredEvents__events_element">
-                                        <div class="featuredEvents__events_element_header">
-                                            <p class="featuredEvents__events_element_headerBtnOpen">-</p>
-                                            <p class="featuredEvents__events_element_headerBtnClose active">+</p>
-                                            <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
-                                        </div>
-                                        <p class="featuredEvents__events_element_text closed">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </li>
-                                </ul>
+                            <div class="featuredEvents__sliderWrapper">
+                                <div class="featuredEvents__gallery">
+                                    <img src="./assets/img/featured_events/featured_events_img_3.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_1.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_2.jpg" alt="img" class="featuredEvents__gallery_img">
+                                </div>
+                                <div class="featuredEvents__events">
+                                    <ul class="featuredEvents__events_list">
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header featuredEvents__events_element_header-active">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="featuredEvents__sliderWrapper">
+                                <div class="featuredEvents__gallery">
+                                    <img src="./assets/img/featured_events/featured_events_img_2.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_3.jpg" alt="img" class="featuredEvents__gallery_img">
+                                    <img src="./assets/img/featured_events/featured_events_img_1.jpg" alt="img" class="featuredEvents__gallery_img">
+                                </div>
+                                <div class="featuredEvents__events">
+                                    <ul class="featuredEvents__events_list">
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header featuredEvents__events_element_header-active">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                        <li class="featuredEvents__events_element">
+                                            <div class="featuredEvents__events_element_header">
+                                                <h3 class="featuredEvents__events_element_headerH3">Assumenda Est Cliche Reprehenderit</h3>
+                                            </div>
+                                            <p class="featuredEvents__events_element_text closed">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,18 +181,68 @@ class NewsAndEvents extends HTMLElement {
 
 customElements.define('u-news-and-events', NewsAndEvents)
 
-const featuredElement = document.querySelectorAll('.featuredEvents__events_element')
 const featuredEventsHeader = document.querySelectorAll('.featuredEvents__events_element_header');
+const newsText = document.querySelectorAll('.featuredEvents__events_element_text')
 
-
-featuredElement.forEach(el => {
-    const openNewsBtn = el.querySelector('.featuredEvents__events_element_headerBtnOpen')
-    const closeNewsBtn = el.querySelector('.featuredEvents__events_element_headerBtnClose')
-    const newsText = el.querySelector('.featuredEvents__events_element_text')
-
-    el.addEventListener('click', () => {
-        openNewsBtn.classList.toggle('active')
-        closeNewsBtn.classList.toggle('active')
-        newsText.classList.toggle('closed')
+featuredEventsHeader.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        if(!btn.classList.contains('featuredEvents__events_element_header-active')){
+            newsText.forEach((newsTextElem) => {
+                newsTextElem.classList.add('closed')
+            })
+            featuredEventsHeader.forEach((featuredEventsHeaderElem) => {
+                featuredEventsHeaderElem.classList.remove('featuredEvents__events_element_header-active')
+            })
+            newsText[index].classList.remove('closed');
+            btn.classList.toggle('featuredEvents__events_element_header-active')
+        } else {
+            btn.classList.remove('featuredEvents__events_element_header-active');
+            newsText[index].classList.add('closed')
+        }
     })
 })
+
+
+const prevSlide = document.getElementById('featuredEventsLeftBtn')
+const nextSlide = document.getElementById('featuredEventsRightBtn')
+/* Устанавливаем стартовый индекс слайда по умолчанию: */
+let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+showSlides(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+
+nextSlide.addEventListener('click', () => {
+    showSlides(slideIndex += 1);
+})
+
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+prevSlide.addEventListener('click', () => {
+    showSlides(slideIndex -= 1);
+})
+
+/* Устанавливаем текущий слайд: */
+// function currentSlide(n) {
+//     showSlides(slideIndex = n);
+// }
+
+/* Функция перелистывания: */
+function showSlides(n) {
+    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+    let slides = document.getElementsByClassName("featuredEvents__sliderWrapper");
+
+    /* Проверяем количество слайдов: */
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    /* Проходим по каждому слайду в цикле for: */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    /* Делаем элемент блочным: */
+    slides[slideIndex - 1].style.display = "block";
+}
