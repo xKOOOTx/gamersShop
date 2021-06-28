@@ -7,3 +7,4 @@ import('../components/aboutUs/aboutUs.js');
 import('../components/servicesBlock/services.js');
 import('../components/ourGallery/ourGallery.js');
 import('../components/testimonial/testimonial.js');
+import('../components/newsAndEvents/newsAndEvents.js');

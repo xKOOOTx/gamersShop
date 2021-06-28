@@ -4,6 +4,7 @@
   max-width: 1171px;
   margin: 0 auto;
   &__header {
+    margin-bottom: 92px;
     font-family: $poppins;
     font-size: 36px;
     line-height: 48px;
@@ -19,12 +20,19 @@
     &_element {
       background: $greyThird;
       border: 1px solid transparent;
+      &_wrapper {
+        height: 120px;
+        padding-bottom: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       &_name {
         max-width: 170px;
-        margin: 18px auto 0;
+        margin: 0 auto;
         font-family: $poppins;
         font-size: 14px;
-        line-height: 23px;
+        line-height: 20px;
         font-weight: 500;
         text-transform: uppercase;
         text-align: center;
@@ -32,7 +40,7 @@
         color: $black;
       }
       &_button {
-        margin: 27px auto 13px;
+        margin: 0 auto;
         padding: 8px 52px;
         border: none;
         background: $red;
@@ -43,9 +51,6 @@
         letter-spacing: 0.01em;
         color: $white;
         text-transform: capitalize;
-      }
-      &:hover {
-        border-color: $greyLight;
       }
     }
   }

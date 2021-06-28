@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .ourGallery__header {
+  margin-bottom: 92px;
   font-family: "Poppins", sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -20,12 +21,19 @@
   background: #f7f7f7;
   border: 1px solid transparent;
 }
+.ourGallery__list_element_wrapper {
+  height: 120px;
+  padding-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .ourGallery__list_element_name {
   max-width: 170px;
-  margin: 18px auto 0;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -33,7 +41,7 @@
   color: #000000;
 }
 .ourGallery__list_element_button {
-  margin: 27px auto 13px;
+  margin: 0 auto;
   padding: 8px 52px;
   border: none;
   background: #f44336;
@@ -44,9 +52,6 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
   text-transform: capitalize;
-}
-.ourGallery__list_element:hover {
-  border-color: #cccccc;
 }
 
 /*# sourceMappingURL=style.css.map */
