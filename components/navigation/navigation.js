@@ -6,7 +6,7 @@ class Navigation extends HTMLElement {
             `
                 <div class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__list_element navigation__list_element-active">
+                        <li class="navigation__list_element">
                             <a href="./index.html" class="navigation__list_link">home</a>
                         </li>
                         <li class="navigation__list_element">

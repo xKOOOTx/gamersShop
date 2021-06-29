@@ -17,23 +17,6 @@
       line-height: 22px;
       font-weight: 400;
       letter-spacing: 0.01em;
-      &:hover {
-        & .navigation__list_link {
-          color: $grey;
-          &:after {
-            width: 100%;
-          }
-        }
-      }
-      &-active {
-        & .navigation__list_link {
-          color: $red;
-          &:after {
-            background: $red;
-            width: 100%;
-          }
-        }
-      }
     }
     &_link {
       padding: 0 10px;
@@ -50,6 +33,29 @@
         height: 3px;
         transition: .2s width ease-in-out;
         background: $grey;
+      }
+      &:hover,
+      &:focus {
+          color: $grey;
+          &:after {
+            width: 100%;
+          }
+      }
+      &-active {
+          color: $red;
+          &:after {
+            background: $red;
+            width: 100%;
+          }
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        color: $red;
+        &:after {
+          width: 100%;
+          background: $red;
+        }
       }
     }
   }

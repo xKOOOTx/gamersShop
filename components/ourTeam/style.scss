@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.ourTeam {
+  padding: 98px 0 78px;
+  background: $greyThird;
+  &__header {
+    max-width: 1171px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: $poppins;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+    color: $red;
+  }
+  &__list {
+    max-width: 1171px;
+    margin: 61px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__element {
+    &_name {
+      font-family: $poppins;
+      font-size: 24px;
+      line-height: 48px;
+      font-weight: 500;
+      color: $red;
+    }
+    &_position {
+      font-family: $roboto;
+      font-size: 16px;
+      line-height: 48px;
+      font-weight: 300;
+      color: $greyOurTeamPosition;
+    }
+  }
+  &__socials {
+    display: flex;
+    &_link {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $black;
+      color: $black;
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+      &:hover {
+        border-color: transparent;
+        color: $white;
+        background: $grey;
+      }
+    }
+  }
+}

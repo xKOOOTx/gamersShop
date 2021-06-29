@@ -10,6 +10,8 @@
 @import "./components/ourGallery/style.css";
 @import "./components/testimonial/style.css";
 @import "./components/newsAndEvents/style.css";
+@import "./components/ourTeam/style.css";
+@import "./components/subscribeWithUs/style.css";
 * {
   margin: 0;
   padding: 0;
