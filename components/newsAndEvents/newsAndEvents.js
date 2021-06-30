@@ -181,9 +181,13 @@ class NewsAndEvents extends HTMLElement {
 
 customElements.define('u-news-and-events', NewsAndEvents)
 
-const featuredEventsHeader = document.querySelectorAll('.featuredEvents__events_element_header');
-const newsText = document.querySelectorAll('.featuredEvents__events_element_text')
 
+/* Аккордеон */
+/* Кнопки для сворачивания/разворачивания аккордеона */
+const featuredEventsHeader = document.querySelectorAll('.featuredEvents__events_element_header');
+/* Текст внутри аккордеона (что сворачиваем/разворачиваем) */
+const newsText = document.querySelectorAll('.featuredEvents__events_element_text')
+/* перебираем кнопки аккордеона, вешаем на них обработчик, и добавляем/удаляем класс к тексту */
 featuredEventsHeader.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         if(!btn.classList.contains('featuredEvents__events_element_header-active')){
@@ -201,48 +205,28 @@ featuredEventsHeader.forEach((btn, index) => {
         }
     })
 })
+/* Конец Аккордеона*/
 
 
-const prevSlide = document.getElementById('featuredEventsLeftBtn')
-const nextSlide = document.getElementById('featuredEventsRightBtn')
+/* Начало слайдера */
+/* Кнопка предыдущий слайд */
+const prevSlide = document.getElementById('featuredEventsLeftBtn');
+/* Кнопка следующий слайд */
+const nextSlide = document.getElementById('featuredEventsRightBtn');
+/* Блок самого слайдера (или же сами слайды) */
+const sliderWrapper = document.getElementsByClassName("featuredEvents__sliderWrapper");
+
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
-let slideIndex = 1;
-/* Вызываем функцию, которая реализована ниже: */
-showSlides(slideIndex);
+/* Вызываем(инициализируем) функцию слайдера */
+showSlides(slideIndex, sliderWrapper);
 
 /* Увеличиваем индекс на 1 — показываем следующий слайд: */
-
 nextSlide.addEventListener('click', () => {
-    showSlides(slideIndex += 1);
+    showSlides(slideIndex += 1, sliderWrapper);
 })
 
 /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
 prevSlide.addEventListener('click', () => {
-    showSlides(slideIndex -= 1);
+    showSlides(slideIndex -= 1, sliderWrapper);
 })
-
-/* Устанавливаем текущий слайд: */
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-
-/* Функция перелистывания: */
-function showSlides(n) {
-    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
-    let slides = document.getElementsByClassName("featuredEvents__sliderWrapper");
-
-    /* Проверяем количество слайдов: */
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-
-    /* Проходим по каждому слайду в цикле for: */
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }
-    /* Делаем элемент блочным: */
-    slides[slideIndex - 1].style.display = "block";
-}
+/* Конец слайдера */

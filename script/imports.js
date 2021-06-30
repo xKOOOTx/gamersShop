@@ -10,3 +10,4 @@ import('../components/testimonial/testimonial.js');
 import('../components/newsAndEvents/newsAndEvents.js');
 import('../components/ourTeam/ourTeam.js');
 import('../components/subscribeWithUs/subscribeUs.js');
+import('../components/contactUs/contactUs.js');

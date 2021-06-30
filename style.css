@@ -12,6 +12,7 @@
 @import "./components/newsAndEvents/style.css";
 @import "./components/ourTeam/style.css";
 @import "./components/subscribeWithUs/style.css";
+@import "./components/contactUs/style.css";
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +44,12 @@ li {
 
 button {
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

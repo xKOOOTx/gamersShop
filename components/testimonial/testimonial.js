@@ -71,46 +71,26 @@ class Testimonial extends HTMLElement {
 
 customElements.define('u-testimonial', Testimonial)
 
-const prevSlide = document.getElementById('testimonialPrevSlide')
-const nextSlide = document.getElementById('testimonialNexSlide')
-/* Устанавливаем стартовый индекс слайда по умолчанию: */
-let slideIndex = 1;
-/* Вызываем функцию, которая реализована ниже: */
-showSlides(slideIndex);
 
-/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+/* Начало слайдера */
+/* Кнопка предыдущий слайд */
+const prevSlide = document.getElementById('testimonialPrevSlide');
+/* Кнопка следующий слайд */
+const nextSlide = document.getElementById('testimonialNexSlide');
+/* Блок самого слайдера (или же сами слайды) */
+const testimonialSlides = document.getElementsByClassName("testimonial__text");
 
+/* Вызываем(инициализируем) функцию слайдера */
+showSlides(slideIndex, testimonialSlides);
+
+/* Увеличиваем индекс на 1 - показываем следующий слайд */
 nextSlide.addEventListener('click', () => {
-    showSlides(slideIndex += 1);
+    showSlides(slideIndex += 1, testimonialSlides);
 })
 
 /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
 prevSlide.addEventListener('click', () => {
-    showSlides(slideIndex -= 1);
+    showSlides(slideIndex -= 1, testimonialSlides);
 })
+/* Конец слайдера */
 
-/* Устанавливаем текущий слайд: */
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-
-/* Функция перелистывания: */
-function showSlides(n) {
-    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
-    let slides = document.getElementsByClassName("testimonial__text");
-
-    /* Проверяем количество слайдов: */
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-
-    /* Проходим по каждому слайду в цикле for: */
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }
-    /* Делаем элемент блочным: */
-    slides[slideIndex - 1].style.display = "block";
-}
