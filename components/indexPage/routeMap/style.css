@@ -1,0 +1,18 @@
+.routeMap {
+  max-width: 1200px;
+  margin: 96px auto 90px;
+}
+.routeMap__header {
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #f44336;
+}
+.routeMap__map {
+  margin: 25px 0 90px;
+}
+
+/*# sourceMappingURL=style.css.map */

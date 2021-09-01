@@ -1,0 +1,94 @@
+@import '../../../variables';
+.galleryHeader {
+  padding-top: 12px;
+  & .infoHeader {
+    background: rgba($black, .7);
+  }
+  & .navigation {
+    border-color: $black;
+  }
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 175px auto;
+  &__header {
+    font-family: Poppins;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    color: $red;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 91px;
+    margin-top: 106px;
+    &_elem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid transparent;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      &:hover {
+        border-color: $greyLight;
+      }
+
+      &_name {
+        height: 100%;
+        margin: 19px 0 30px;
+        line-height: 20px;
+        font-size: inherit;
+        font-weight: inherit;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+      }
+      &_button {
+        display: inline-block;
+        margin-bottom: 13px;
+        padding: 8px 52px;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: 24px;
+        background: $red;
+        color: $white;
+        text-transform: uppercase;
+        transition: background-color .2s ease-in-out;
+        &:hover {
+          background: darken($red, 8);
+        }
+      }
+    }
+    &_loadMoreBtn {
+      display: flex;
+      align-items: center;
+      margin: 80px auto 0;
+      padding: 11px 39px 11px 36px;
+      border: 1px solid $black;
+      background: $white;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out;
+      &_arrow {
+        margin-left: 4px;
+      }
+      & path {
+        transition: fill .2s ease-in-out;
+      }
+      &:hover {
+        background: $red;
+        border-color: $white;
+        color: $white;
+        & path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

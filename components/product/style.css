@@ -1,0 +1,146 @@
+.product {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 175px 0 180px;
+}
+.product__gallery {
+  width: 470px;
+  height: 258px;
+  border-radius: 5px;
+}
+.product__gallery_main {
+  width: 100%;
+  height: 100%;
+}
+.product__gallery_main img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.product__gallery_main img.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+.product__gallery_thumbnails {
+  margin-top: 61px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.product__gallery_thumbnails img {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.product__gallery_thumbnails img:hover, .product__gallery_thumbnails img.active {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 7px 4px rgba(0, 0, 0, 0.4);
+}
+.product__info {
+  font-family: Poppins;
+  color: #000000;
+}
+.product__info_name {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.product__info_name-span {
+  color: #f44336;
+}
+.product__info_price {
+  margin: 20px 0 15px;
+  font-size: 62px;
+  line-height: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+.product__info_buyBtn {
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  background: #f44336;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}
+.product__info_text {
+  max-width: 450px;
+  margin-top: 32px;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #999999;
+}
+
+.infoHeader {
+  margin-top: 12px;
+}
+
+.navigation {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.similarGames {
+  padding: 49px 0 56px;
+  background: #e8e8e8;
+}
+.similarGames__header {
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #f44336;
+  text-align: center;
+}
+.similarGames__block {
+  display: flex;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  column-gap: 30px;
+}
+.similarGames__block_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+}
+.similarGames__block_element:hover {
+  border: 1px solid #cccccc;
+}
+.similarGames__block_element_name {
+  margin: 19px 0 10px;
+  height: 100%;
+  text-align: center;
+}
+.similarGames__block_element_btn {
+  padding: 8px 52px;
+  margin-bottom: 13px;
+  background: #f44336;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+}
+.similarGames__block_element_btn:hover {
+  border-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

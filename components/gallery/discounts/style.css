@@ -1,0 +1,10 @@
+.discounts {
+  display: flex;
+}
+.discounts__element {
+  flex: 1;
+  background: url("../../../assets/img/gallery/discounts/discountsCoD.jpg");
+  height: 562px;
+}
+
+/*# sourceMappingURL=style.css.map */

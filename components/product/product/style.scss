@@ -1,0 +1,96 @@
+@import '../../../variables';
+.product {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 175px 0 180px;
+  &__gallery {
+    //width: 650px;
+    //height: 420px;
+    width: 470px;
+    height: 258px;
+    border-radius: 5px;
+    &_main {
+      width: 100%;
+      height: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+        display: none;
+        object-fit: cover;
+        opacity: 0;
+        transform: scale(1.1);
+        transition: all .5s ease-in-out;
+        &.active {
+          display: block;
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+    &_thumbnails {
+      margin-top: 61px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5px;
+      & img {
+        width: 100px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover,
+        &.active {
+          transform: scale(1.1);
+          box-shadow: 0px 2px 7px 4px rgb($black, .4);
+        }
+      }
+    }
+  }
+  &__info {
+    font-family: Poppins;
+    color: $black;
+    &_name {
+      text-align: center;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 500;
+      &-span {
+        color: #f44336;
+      }
+    }
+    &_price {
+      margin: 20px 0 15px;
+      font-size: 62px;
+      line-height: 48px;
+      font-weight: 300;
+      text-align: center;
+    }
+    &_buyBtn {
+      display: block;
+      width: 100%;
+      padding: 18px 0;
+      background: $red;
+      font-size: 30px;
+      line-height: 24px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: $white;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    &_text {
+      max-width: 450px;
+      margin-top: 32px;
+      font-family: 'Roboto Condensed';
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      color: $grey;
+    }
+  }
+}

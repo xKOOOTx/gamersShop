@@ -1,0 +1,54 @@
+@import '../../variables';
+@import './product/style';
+.infoHeader {
+  margin-top: 12px;
+}
+
+.navigation {
+  border-bottom: 1px solid $black!important;
+}
+
+.similarGames {
+  padding: 49px 0 56px;
+  background: $greyLighter;
+  &__header {
+    font-family: Poppins;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    color: $red;
+    text-align: center;
+  }
+  &__block {
+    display: flex;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    column-gap: 30px;
+
+    &_element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid $greyLight;
+      }
+      &_name {
+        margin: 19px 0 10px;
+        height: 100%;
+        text-align: center;
+      }
+      &_btn {
+        padding: 8px 52px;
+        margin-bottom: 13px;
+        background: $red;
+        color: $white;
+        border: 1px solid $black;
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}

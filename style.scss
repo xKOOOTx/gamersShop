@@ -8,19 +8,21 @@
 @import "variables";
 
 //import components
-@import "./components/mainHeaderBlock/style.css";
-@import "./components/infoHeader/style.css";
-@import "./components/navigation/style.css";
-@import "./components/mainInfoBlock/style.css";
-@import "./components/infoHeaderSocials/style.css";
-@import "./components/aboutUs/style.css";
-@import "./components/servicesBlock/style.css";
-@import "./components/ourGallery/style.css";
-@import "./components/testimonial/style.css";
-@import "./components/newsAndEvents/style.css";
-@import "./components/ourTeam/style.css";
-@import "./components/subscribeWithUs/style.css";
-@import "./components/contactUs/style.css";
+@import "components/main/mainHeaderBlock/style.css";
+@import "components/main/infoHeader/style.css";
+@import "components/main/navigation/style.css";
+@import "components/main/mainInfoBlock/style.css";
+@import "components/indexPage/infoHeaderSocials/style.css";
+@import "components/indexPage/aboutUs/style.css";
+@import "components/indexPage/servicesBlock/style.css";
+@import "components/indexPage/ourGallery/style.css";
+@import "components/indexPage/testimonial/style.css";
+@import "components/indexPage/newsAndEvents/style.css";
+@import "components/indexPage/ourTeam/style.css";
+@import "components/indexPage/subscribeWithUs/style.css";
+@import "components/indexPage/contactUs/style.css";
+@import "components/indexPage/routeMap/style.css";
+@import "components/main/footer/style.css";
 
 
 

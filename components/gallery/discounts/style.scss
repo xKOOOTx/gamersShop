@@ -1,0 +1,71 @@
+@import "../../../variables";
+.discounts {
+  display: flex;
+  &__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 115px;
+    background-size: cover;
+    height: 562px;
+    transition: flex .2s ease-in-out;
+    cursor: default;
+    &_discount {
+      font-family: Poppins;
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &_name {
+      margin: 10px 0 28px;
+      font-size: 36px;
+      line-height: 36px;
+      color: $red;
+    }
+    &_price {
+      display: flex;
+      align-items: baseline;
+      color: #8c8c8c;
+      font-weight: 300;
+      line-height: 48px;
+
+      &_oldPrice {
+        font-family: Poppins;
+        font-size: 62px;
+        color: $black;
+      }
+      &_slash {
+        font-size: 36px;
+      }
+      &_newPrice {
+        font-size: 36px;
+        text-decoration: line-through;
+      }
+    }
+    &_buyBtn {
+      display: inline-block;
+      max-width: 265px;
+      margin-top: 20px;
+      padding: 18px 105px;
+      font-family: Poppins;
+      font-size: 30px;
+      line-height: 24px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      border: 1px solid $black;
+      background: $red;
+      color: $white;
+      text-transform: uppercase;
+      transition: background-color .2s ease-in-out;
+      &:hover {
+        border-color: $red;
+      }
+    }
+    &:hover {
+      flex: 2;
+    }
+  }
+}
