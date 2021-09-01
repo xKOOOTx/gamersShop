@@ -25,22 +25,22 @@ const itemArr = [
     {
         img: './assets/img/gallery/battlefield1.jpg',
         name: 'BATTLEFIELD 1',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/starwarsbf.jpg',
         name: 'STAR WARS:<br> Battlefront II',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/battlefield4.jpg',
         name: 'BATTLEFIELD 4',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/wot.jpg',
         name: 'WORLD OF TANKS',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/gallery_element_1.jpg',
@@ -50,17 +50,17 @@ const itemArr = [
     {
         img: './assets/img/gallery/gallery_element_2.jpg',
         name: 'FOR HONOR',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/gallery_element_3.jpg',
         name: 'WORLD OF WARSHIPS',
-        link: '#'
+        link: './product.html'
     },
     {
         img: './assets/img/gallery/gallery_element_4.jpg',
         name: 'CALL OF DUTY:<br> Infinite Warface',
-        link: '#'
+        link: './product.html'
     },
 ]
 
